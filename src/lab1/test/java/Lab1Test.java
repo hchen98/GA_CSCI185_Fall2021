@@ -40,4 +40,24 @@ public class Lab1Test {
     assertEquals(ans, r2.getPerimeter());
   }
 
+  @Test
+  void test_random_area(){
+    double w = Math.random();
+    double h = Math.random();
+    double ans = w * h;
+
+    Rectangle random_area = new Rectangle(h, w);
+    assertEquals(ans, random_area.getArea());
+  }
+
+  @Test
+  void test_random_perimeter(){
+    double w = Math.random();
+    double h = Math.random();
+    double ans = 2*(w + h);
+
+    Rectangle random_area = new Rectangle(h, w);
+    assertEquals(ans, random_area.getPerimeter());
+  }
+
 }
